@@ -1,0 +1,12 @@
+﻿// Execute only once: this generates the Configurations.cs class
+Enable-Migrations -ContextTypeName TravelerContext -MigrationsDirectory Migrations\TravelAgencyMigrations
+
+// Execute when my model changes:
+add-migration -ConfigurationTypeName TravelAgency.Migrations.TravelAgencyMigrations.Configuration "InitialCreate"
+
+// May be executed anytime
+update-database -ConfigurationTypeName TravelAgency.Migrations.TravelAgencyMigrations.Configuration
+
+
+// Old Connectionstring
+    <add name="DefaultConnection" connectionString="Data Source=(localdb)\Projects;AttachDbFilename=|DataDirectory|\TravelAgency.mdf;Initial Catalog=TravelAgency;Integrated Security=True;" providerName="System.Data.SqlClient" />
