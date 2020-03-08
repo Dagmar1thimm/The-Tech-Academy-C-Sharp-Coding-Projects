@@ -1,0 +1,5 @@
+﻿webconfig
+
+  <connectionStrings>
+    <add name="DefaultConnection" providerName="System.Data.SqlClient" connectionString="Data Source=(LocalDb)\MSSQLLocalDB;Initial Catalog=aspnet-DagmarsTravelAgency-20200308133814;Integrated Security=SSPI;AttachDBFilename=|DataDirectory|\aspnet-DagmarsTravelAgency-20200308133814.mdf" />
+  </connectionStrings>

@@ -1,0 +1,42 @@
+﻿@model DagmarsTravelAgency.Models.Trip
+
+@{
+    ViewBag.Title = "Details";
+}
+
+<h2>Details</h2>
+
+<div>
+    <h4>Trip</h4>
+    <hr />
+    <dl class="dl-horizontal">
+        <dt>
+            @Html.DisplayNameFor(model => model.Title)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Title)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.Duration)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Duration)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.LuxuryLevel)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.LuxuryLevel)
+        </dd>
+
+    </dl>
+</div>
+<p>
+    @Html.ActionLink("Edit", "Edit", new { id = Model.TripID }) |
+    @Html.ActionLink("Back to List", "Index")
+</p>
